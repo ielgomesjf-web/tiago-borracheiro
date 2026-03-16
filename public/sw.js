@@ -1,9 +1,10 @@
 const CACHE_NAME = 'borracheiro-v1';
+const BASE = self.registration.scope;
 const PRECACHE_ASSETS = [
-  '/',
-  '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png',
+  BASE,
+  BASE + 'manifest.json',
+  BASE + 'icons/icon-192x192.png',
+  BASE + 'icons/icon-512x512.png',
 ];
 
 self.addEventListener('install', (event) => {
@@ -26,7 +27,7 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request).catch(() => caches.match('/'))
+      fetch(request).catch(() => caches.match(BASE))
     );
   } else if (/\.(css|js|woff2?|png|svg|jpg|webp)$/.test(request.url)) {
     event.respondWith(
