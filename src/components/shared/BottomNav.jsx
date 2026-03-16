@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { MapPin, Clock, User, LayoutDashboard, Wallet } from 'lucide-react';
+import { MapPin, Clock, User, LayoutDashboard, Wallet, Bot } from 'lucide-react';
 
 const clientTabs = [
   { path: '/client', icon: MapPin, label: 'Home' },
@@ -9,6 +9,7 @@ const clientTabs = [
 
 const providerTabs = [
   { path: '/provider', icon: LayoutDashboard, label: 'Dashboard' },
+  { path: '/provider/ai-chat', icon: Bot, label: 'IA' },
   { path: '/provider/wallet', icon: Wallet, label: 'Carteira' },
   { path: '/provider/profile', icon: User, label: 'Perfil' },
 ];

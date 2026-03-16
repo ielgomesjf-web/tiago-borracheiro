@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { Car, Wrench, Circle } from 'lucide-react';
+import { Car, Wrench } from 'lucide-react';
 import { useApp } from '../context/AppContext';
+import TireIcon from '../components/shared/TireIcon';
 
 export default function RoleSelectPage() {
   const navigate = useNavigate();
@@ -19,12 +20,8 @@ export default function RoleSelectPage() {
 
       {/* Logo and branding */}
       <div className="flex flex-col items-center mb-12 animate-fade-in relative z-10">
-        <div className="relative mb-6">
-          <Circle size={64} className="text-primary" strokeWidth={1.5} />
-          <Wrench
-            size={32}
-            className="text-primary absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-          />
+        <div className="relative mb-6 animate-[spin_20s_linear_infinite]">
+          <TireIcon size={96} />
         </div>
         <h1 className="text-3xl font-bold text-text-primary tracking-tight">
           Tiago Borracheiro

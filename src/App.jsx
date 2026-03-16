@@ -15,6 +15,7 @@ import NavigationPage from './pages/provider/NavigationPage';
 import ServiceExecutionPage from './pages/provider/ServiceExecutionPage';
 import WalletPage from './pages/provider/WalletPage';
 import ProviderProfilePage from './pages/provider/ProviderProfilePage';
+import AIChatPage from './pages/provider/AIChatPage';
 
 export default function App() {
   const { role } = useApp();
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/provider/incoming" element={<IncomingCallPage />} />
         <Route path="/provider/navigation" element={<NavigationPage />} />
         <Route path="/provider/execution" element={<ServiceExecutionPage />} />
+        <Route path="/provider/ai-chat" element={<AIChatPage />} />
         <Route path="/provider/wallet" element={<WalletPage />} />
         <Route path="/provider/profile" element={<ProviderProfilePage />} />
 
