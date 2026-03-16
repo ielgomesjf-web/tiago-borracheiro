@@ -56,7 +56,7 @@ export default function ProviderProfilePage() {
             className="text-xl font-bold text-text-primary animate-fade-in"
             style={{ animationDelay: '0.1s', opacity: 0 }}
           >
-            {user?.name || 'Tiago Borracheiro'}
+            {user?.name || 'Nome da Sua Empresa Aqui'}
           </h1>
 
           {/* Rating */}

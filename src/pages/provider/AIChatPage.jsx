@@ -6,7 +6,7 @@ import BottomNav from '../../components/shared/BottomNav';
 const INITIAL_MESSAGE = {
   id: 0,
   role: 'assistant',
-  text: 'Ola! Sou o assistente IA do Tiago Borracheiro. Posso te ajudar com duvidas sobre servicos, precos, dicas de manutencao de pneus, ou qualquer outra questao. Como posso te ajudar?',
+  text: 'Ola! Sou seu assistente IA. Posso te ajudar com duvidas sobre servicos, precos, dicas de manutencao de pneus, ou qualquer outra questao. Como posso te ajudar?',
 };
 
 const AI_RESPONSES = [

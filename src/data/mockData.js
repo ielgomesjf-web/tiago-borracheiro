@@ -29,7 +29,7 @@ export const clientProfile = {
 // PROVIDER PROFILE
 export const providerProfile = {
   id: 'prv-001',
-  name: 'Tiago Borracheiro',
+  name: 'Nome da Sua Empresa Aqui',
   phone: '(11) 91234-5678',
   rating: 4.8,
   totalServices: 1247,
@@ -223,7 +223,7 @@ export const orderHistory = [
     status: 'completed',
     service: 'Calibragem',
     vehicleType: 'moto',
-    provider: { name: 'Tiago Borracheiro', rating: 4.8 },
+    provider: { name: 'Nome da Sua Empresa Aqui', rating: 4.8 },
     price: 10,
     payment: 'cash',
     rating: 5,
